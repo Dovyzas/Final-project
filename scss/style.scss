@@ -1,0 +1,23 @@
+:root {
+  --white: #f5f5f5;
+  --green: #41d395;
+  --dark: #1c1c1c;
+  --orange: #e27866;
+  --skyblue: #6696e2;
+}
+
+body {
+  margin: 0;
+}
+
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: var(--skyblue);
+
+  span {
+    color: var(--skyblue);
+  }
+}
+
