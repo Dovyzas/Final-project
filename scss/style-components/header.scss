@@ -4,6 +4,7 @@ header {
     left: 0;
     width: 100%;
     background-color: var(--dark);
+    z-index: 3;
 
     .container {
         display: flex;
@@ -12,20 +13,24 @@ header {
 
     ul {
         display: flex;
+        // padding-top: 26px;
         
         li {
         list-style: none;
-        padding-right: 45px;
-        
+        padding-top: 3px;
+        margin-left: 45px;
 
-        a{
-            text-decoration: none;
-            color: var(--white);
-            font-size: 14px;
+            a{
+                text-decoration: none;
+                color: #fff;
+                opacity: 0.69;
+                font-size: 14px;
+                
+                &:hover {
+                    opacity: 1;
+                    border-bottom: 2px solid var(--orange);
+                }
+            }
         }
-
-        }
-
     }
-    
 }
