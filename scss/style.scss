@@ -2,13 +2,16 @@
   --white: #f5f5f5;
   --mint: #41d395;
   --dark: #1c1c1c;
-  --orange: #e27866;
+  --orange: #E27866;
   --skyblue: #6696e2;
 }
 
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  p {
+    font-size: 14px;
+  }
 }
 
 .container {
@@ -19,59 +22,9 @@ body {
   box-sizing: border-box;
 }
 
-.cheshire {
-  background-color: var(--dark);
-  .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: #fff;
 
-    .cheshire-content {
-      padding: 90px 0 90px 0;
-    }
-    p {
-      width: 451px;
-    }
-
-    h1 {
-      width: 314px;
-      font-size: 30px;
-    }
-    .logo {
-      display: flex;
-      align-items: center;
-    }
-
-    .title {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      .title-icon {
-        margin-right: 20px;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: var(--orange);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img {
-          width: 27px;
-          height: 18px;
-        }
-      } 
-    }
-  }
-
-  img {
-    width: 388.58px;
-    height: 169.47px;
-  }
-}
-h1 {
-  color: rebeccapurple;
-}
 @import "style-components/header";
 @import "style-components/hero.scss";
-@import "style-components/socials.scss"
+@import "style-components/socials.scss";
+@import "style-components/cheshire.scss";
+@import "style-components/about.scss";

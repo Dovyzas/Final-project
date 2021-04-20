@@ -7,7 +7,13 @@
         justify-content: space-between;
 
         .socials-image img{
-            padding-left: 90.6px;
+            margin-left: 90.6px;
+            opacity: 0.65;
+
+            &:hover {
+                opacity: 1;
+                cursor: pointer;
+            }
         }
 
         .socials-content {

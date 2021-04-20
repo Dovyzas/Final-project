@@ -1,0 +1,76 @@
+.cheshire {
+    background-color: var(--dark);
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      color: #fff;
+  
+      .cheshire-content {
+        padding: 90px 0 90px 0;
+      }
+      p {
+        width: 451px;
+        line-height: 22px;
+        margin-bottom: 43px;
+        color: white;
+
+      }
+  
+      h1 {
+        position: relative;
+        width: 317px;
+        font-size: 30px;
+        margin-bottom: 54px;
+
+        &:after {
+            content: "";
+            background: var(--orange);
+            position: absolute;
+            bottom: -27px;
+            left: 0;
+            height: 2px;
+            width: 200px;
+          }
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+  
+      .title {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        .title-icon {
+          margin: 0 20px 48px 0;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: var(--orange);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: 27px;
+            height: 18px;
+          }
+        } 
+
+        .title-text {
+            p {
+                margin: 0 0 6px 0;
+                width: 394px;
+                // color: #ffffff;
+            }
+        }
+      }
+    }
+  
+    img {
+      width: 388.58px;
+      height: 169.47px;
+    }
+  }
