@@ -69,7 +69,9 @@ body {
     height: 169.47px;
   }
 }
-
+h1 {
+  color: rebeccapurple;
+}
 @import "style-components/header";
 @import "style-components/hero.scss";
 @import "style-components/socials.scss"
