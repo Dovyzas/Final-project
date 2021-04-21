@@ -1,0 +1,99 @@
+.pricing {
+    background-color: var(--skyblue);
+    color: #ffffff;
+    position: relative;
+
+    h1, p {
+        text-align: center;
+    }
+
+    .pricing-header {
+        h1 {
+            text-transform: uppercase;
+            padding-top: 91px;
+            position: relative;
+            margin-bottom: 56px;
+            font-size: 36px;
+    
+            &:after {
+                content: "";
+                position: absolute;
+                background: var(--mint);
+                bottom: -21px;
+                left: 518px;
+                height: 2px;
+                width: 64px;   
+            }
+        }
+        p {
+            margin-bottom: 83px;
+        }
+    }
+
+    .pricing-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-bottom: 114px;
+
+        .pricing-tab {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            h1 {
+                font-size: 94px;
+
+                span {
+                    font-size: 35px;
+                }
+            }
+            #most:after {
+                content: "Our Most Popular";
+                height: 40px;
+                width: 100%;
+                background-color: var(--mint);
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-transform: uppercase;
+                font-size: 14px;
+            }
+
+            .tab-one {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: var(--dark);
+                border-radius: 5px 5px 0 0;
+                width: 343px;
+                margin: 0;
+                h1 {
+                    margin: 0;
+                }
+                p {
+                    opacity: 0.5;
+                }
+                &:after {
+                    content: "";
+                    height: 6px;
+                    width: 100%;
+                    background-color: var(--mint);
+                }
+            }
+
+            .tab-two {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #fff;
+                color: #86878B;
+                width: 100%;
+                border-radius: 0 0 5px 5px;
+            }
+        }
+    }
+}

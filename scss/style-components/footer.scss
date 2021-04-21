@@ -1,0 +1,28 @@
+footer {
+    margin: 0;
+    background-color: var(--dark);
+    .container {
+        display: flex;
+        // flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .socials-image img {
+
+            width: 20px;
+            height: 20px;
+            padding: 50px 0;
+
+            &:not(:last-child) {
+                margin-right: 108px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            opacity: 0.5;
+        }
+    }
+}
+
