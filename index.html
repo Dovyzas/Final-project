@@ -13,35 +13,60 @@
 <body>
     <header>
         <div class="container">
-            <img class="logo" src="images/logo.svg" alt="Cheshire County">
+            <a class="logo" href="#hero">
+                <img src="images/logo.svg" alt="Cheshire County">
+            </a>    
             <nav class="nav-bar">
                 <ul>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Reviews</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero">  
-            <img class="hero-image" src="images/hero.jpg" alt="hero">
-            <div class="container">  
-                    <!-- <div class="content-text">
-                        <img src="images/logo.svg">
-                        <h1>Explained propriety of out perpetual to you</h1>
-                        <p>Insipidity the sufficient discretion imprudence resolution sir him decisively.Proceed how any engaged visitor. Explained propriety of out perpetual his you.Feel sold off felt nay rose met you. We so entreaties cultivated astonished is.</p>
-                        <div class="hero-button">Download</div>
+        <section class="hero" id="hero">  
+            <img class="hero-image" src="images/hero.jpg">
+            <h1></h1>
+            <div class="hero-content container">  
+                <div class="content-text">
+                    <img class="logo" src="images/logo.svg">
+                    <h1>Explained propriety of out perpetual to you</h1>
+                    <p>Insipidity the sufficient discretion imprudence resolution sir him decisively. Proceed how any engaged visitor. Explained propriety of out perpetual his you. Feel sold off felt nay rose met you. We so entreaties cultivated astonished is.</p>
+                    <div class="hero-button"><a href="#">Download</a></div>
+                </div>
+
+                <form>
+                    <div class="form-content">
+                        <h4>Your details</h4>
+                        <input type="text" id="fname" placeholder="First name">
+                        <input type="text" id="lname" placeholder="Last name">
+                        <input type="text" id="number" placeholder="Phone number">
+                        <h4>Type of subscription</h4>
+                        <div class="custom-radio">
+                            <input type="radio" name="subscription" id="sub-month">
+                            <label for="sub-month">
+                                <div class="radio"></div>
+                                <span>MONTHLY</span>
+                            </label>
+                        </div>
+
+                        <div class="custom-radio">
+                            <input type="radio" name="subscription" id="sub-year">
+                            <label for="sub-year">
+                                <div class="radio"></div>
+                                <span>YEARLY</span>
+                            </label>
+                        </div>
                     </div>
-
-                    <div class="form">
-
-                    </div> -->
+                </form>
             </div>
         </section>
+
         <div class="socials">
             <div class="container">
                 <div class="socials-content">
@@ -88,7 +113,7 @@
             </div>
         </div>
 
-        <section class="about-section">
+        <section class="about-section" id="about">
             <div class="container">
                 <h1>Why this is awesome</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -112,7 +137,7 @@
             </div>
         </section>
 
-        <section class="pricing">
+        <section class="pricing" id="pricing">
             <div class="container">
                 <div class="pricing-header">
                     <h1>pricing options</h1>
