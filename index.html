@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Cheshire County</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <div class="container">
-            <a class="logo" href="#hero">
+            <a class="logo" href="#">
                 <img src="images/logo.svg" alt="Cheshire County">
             </a>    
             <nav class="nav-bar">
@@ -37,30 +38,41 @@
                     <img class="logo" src="images/logo.svg">
                     <h1>Explained propriety of out perpetual to you</h1>
                     <p>Insipidity the sufficient discretion imprudence resolution sir him decisively. Proceed how any engaged visitor. Explained propriety of out perpetual his you. Feel sold off felt nay rose met you. We so entreaties cultivated astonished is.</p>
-                    <div class="hero-button"><a href="#">Download</a></div>
+                    <div class="hero-button">
+                        <a href="#">Download</a>
+                    </div>
                 </div>
 
                 <form>
+                    
                     <div class="form-content">
+                        <div class="form-header">
+                            <p>Try Your <span>FREE</span> Trial Today</p>
+                        </div>
                         <h4>Your details</h4>
                         <input type="text" id="fname" placeholder="First name">
                         <input type="text" id="lname" placeholder="Last name">
                         <input type="text" id="number" placeholder="Phone number">
                         <h4>Type of subscription</h4>
-                        <div class="custom-radio">
-                            <input type="radio" name="subscription" id="sub-month">
-                            <label for="sub-month">
-                                <div class="radio"></div>
-                                <span>MONTHLY</span>
-                            </label>
-                        </div>
+                        <div class="radio">
+                            <div class="custom-radio">
+                                <input type="radio" name="subscription" id="sub-month">
+                                <label for="sub-month">
+                                    <div class="radio"></div>
+                                    <span>MONTHLY</span>
+                                </label>
+                            </div>
 
-                        <div class="custom-radio">
-                            <input type="radio" name="subscription" id="sub-year">
-                            <label for="sub-year">
-                                <div class="radio"></div>
-                                <span>YEARLY</span>
-                            </label>
+                            <div class="custom-radio">
+                                <input type="radio" name="subscription" id="sub-year">
+                                <label for="sub-year">
+                                    <div class="radio"></div>
+                                    <span>YEARLY</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-footer">
+                            <p>GET STARTED</p>
                         </div>
                     </div>
                 </form>
@@ -82,6 +94,90 @@
                 </div>
             </div>    
         </div>
+
+        <section class="tabs">
+            <img class="tabs-image" src="images/kalnai.jpg">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li class="active" data-slide="1">
+                            <span>REGISTER</span>
+                        </li>
+                        <li data-slide="2">
+                            <span>APPLY</span>
+                            </li>
+                        <li data-slide="3">
+                            <span>RECEIVE</span>
+                        </li>
+                    </ul>
+                </nav>
+                    
+                <div class="tab-content active" data-slide="1">
+                    <div class="tab-display">
+                        <div class="tab-text">
+                            <h1>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                        </div>
+                        <div class="tab-images">
+                            <div class="top">
+                                <img src="images/tab-image-1.jpg">
+                                <img src="images/tab-image-3.jpg">
+                            </div>
+                            <div class="bottom">
+                                <img src="images/tab-image-2.jpg">
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" data-slide="2">
+                    <div class="tab-display">
+                        <div class="tab-text">
+                            <h1>Application with ease. Connect to our limited services!</h1>                            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+                                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+                                    penatibus et magnis dis parturient montes.
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                        </div>
+                        <div class="tab-images">
+                            <div class="top">
+                                <img src="images/emilio-garcia-lb9hi0NDjT0-unsplash-min.jpg">
+                                <img src="images/christin-hume-Hcfwew744z4-unsplash-min.jpg">
+                            </div>
+                            <div class="bottom">
+                                <img src="images/kaspars-eglitis-Vdx-2lsuhm0-unsplash-min.jpg">
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" data-slide="3">
+                    <div class="tab-display">
+                        <div class="tab-text">
+                            <h1>Receive the most using our brand new methods. With the newest splash of everything.</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+                                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+                                    penatibus et magnis dis parturient montes.
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                        </div>
+                        <div class="tab-images">
+                            <div class="top">
+                                <img src="images/small_mouse_macro_515329-min.jpg">
+                                <img src="images/Man-Silhouette-min.jpg">
+                            </div>
+                            <div class="bottom">
+                                <img src="images/7tips.jpg">
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <div class="cheshire">
             <div class="container">
@@ -209,5 +305,8 @@
             </div>
         </footer>
     </main>    
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

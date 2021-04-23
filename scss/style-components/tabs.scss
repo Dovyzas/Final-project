@@ -1,0 +1,128 @@
+.tabs {
+    position: relative;
+    padding: 115px 0;
+
+    &-image,
+    &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &:after {
+        content: "";
+        background: transparent linear-gradient(270deg, #6696E2 0%, #E27866 100%) 0% 0% no-repeat padding-box;
+        opacity: 0.42;
+    }
+
+    &-image {
+        object-fit: cover;
+    }
+
+    .container {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        z-index: 1;
+        ul {
+            list-style: none;
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100px;
+                height: 100px;
+                background-color: #A37169;
+                margin-right: 47px;
+                font-size: 14px;
+                font-weight: bold;
+                color: rgba(255, 255, 255, 0.5);
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+
+                span {
+                    transform: rotate(-45deg);
+                }
+
+                &:hover,
+                &.active {
+                    background-color: #E27866;
+                    color: #ffffff;
+                    transition: 0.2s ease-in-out;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 21px;
+                }
+            }
+        }
+    }
+    .tab-content {
+        display: none;
+        animation: slide 0.4s ease-in-out;
+        color: #ffffff;
+
+        .tab-display {
+            display: flex;
+            align-items: center;
+        }
+
+        &.active {
+            display: block;
+        }
+
+        .tab-images {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                position: relative;
+                margin: 0 27px 21px 0;
+                object-fit: cover;
+
+                &:after {
+                    content: "Explore";
+                    position: absolute;
+                    background-color: var(--orange);
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    margin: auto;
+                }
+            }
+            .top {
+                display: flex;
+
+                img {
+                    width: 167px;
+                    height: 167px;
+                }
+            }
+
+            .bottom {
+                img {
+                    width: 362px;
+                    height: 177px;
+                }
+            }
+        }
+    }
+
+    @keyframes slide {
+        from {
+            transform: translateY(-20px);
+            opacity: 0.2;
+        }
+
+        to {
+            transform: translteX(0);
+            opacity: 1;
+        }
+    }
+}

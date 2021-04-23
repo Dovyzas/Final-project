@@ -2,17 +2,79 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
     background-color: #fff;
     color: var(--dark);
-    border-radius: 5px;
     padding: 0 50px;
     margin: 75px 0 140px 0;
+    width: 260px;
+
+    .radio {
+        display: flex;
+        flex-direction: row;
+    }
+    .custom-radio {
+        
+        label {
+          display: inline-flex;
+          justify-content: flex-start;
+          cursor: pointer;
+    
+          .radio {
+            position: relative;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            border: 1px solid #41d395;
+            opacity: 0.5;
+            transition: 0.3s ease-in-out;
+            margin-right: 5px;
+    
+            &:after {
+              content: "";
+              width: 5px;
+              height: 5px;
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              margin: auto;
+              background-color: #41d395;
+              border-radius: 50%;
+              transform-origin: center center;
+              transform: scale(0);
+              transition: 0.3s ease-in-out;
+            }
+          }
+    
+          span {
+            color: var(--dark);
+            font-size: 9px;
+            font-weight: bold;
+            padding-right: 17px;
+          }
+        }
+    
+        input {
+          display: none;
+    
+          &:checked + label {
+            .radio {
+              opacity: 1;
+    
+              &:after {
+                transform: scale(1);
+              }
+            }
+          }
+        }
+      } 
 
     input {
         border: none;
         border-bottom: 1px solid #D8D8D8;
         margin-bottom: 30px;
-        width: 100%;
         box-sizing: border-box;
         font-family: 'Montserrat', sans-serif;
         font-size: 13px;
@@ -20,43 +82,79 @@
         width: 260px;
         padding-left: 10px;
     }
-
-    &:before, 
-    &:after {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        padding: 17px 0;
+    .form-header {
+        p {
+            border-radius: 5px 5px 0 0;
+            position: absolute;
+            top: -59px;
+            right: 0;
+            margin: 0;
+            background-color: #F5F5F5;
+            width: 260px;
+            text-align: center;
+            padding: 17px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 1;
+            font-size: 20px;
+        }
     }
+
+    .form-footer {
+        p {
+            position: absolute;
+            bottom: -58px;
+            right: 0;
+            margin: 0;
+            background-color: var(--mint);
+            color: #ffffff;
+            width: 260px;
+            text-align: center;
+            padding: 17px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 1;
+            font-size: 20px;
+            border-radius: 0 0 5px 5px;
+        }
+    }
+
+    // &:before, 
+    // &:after {
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     width: 100%;
+    //     padding: 17px 0;
+    // }
 
     // Try free trial laukelis
 
-    &:before {
-        content: "Try Your FREE Trial Today";
-        background-color: #F5F5F5;
-        font-size: 20px;
-    }
+    // &:before {
+    //     content: "Try Your FREE Trial Today";
+    //     background-color: #F5F5F5;
+    //     font-size: 20px;
+    // }
 
-    // Get started laukelis
+    // // Get started laukelis
 
-    &:after {
-        content: "GET STARTED";
-        text-align: center;
-        background-color: var(--mint);
-        color: #ffffff;
-        font-weight: bold;
-    }
-
-    &:hover:after {
-        cursor: pointer;
-    }
+    // &:after {
+    //     content: "GET STARTED";
+    //     text-align: center;
+    //     background-color: var(--mint);
+    //     color: #ffffff;
+    //     font-weight: bold;
+    // }
 }
+//     &:hover:after {
+//         cursor: pointer;
+//     }
+// }
 
 .hero-button {
-    border: 2px solid #fff;
-    width: 9%;
-    padding: 12px 22px;
+    
     cursor: pointer;
 
     a {
@@ -65,5 +163,7 @@
         font-weight: bold;
         font-size: 14px;
         text-transform: uppercase;
+        padding: 12px 22px;
+        border: 2px solid #fff;
     }
 }
