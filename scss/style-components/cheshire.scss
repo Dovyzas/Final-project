@@ -36,7 +36,7 @@
 
         @media (max-width: 700px) {
           font-size: 20px;
-          text-align: center;
+          // text-align: center;
           display: flex;
         }
 
@@ -81,6 +81,10 @@
             p {
                 margin: 0 0 6px 0;
                 width: 394px;
+
+                @media (max-width: 700px) {
+                  width: 200px;
+                }
             }
         }
       }
@@ -91,8 +95,8 @@
       height: 169.47px;
 
       @media (max-width: 700px) {
-        width: calc(388px*0.75);
-        height: calc(169px*0.8);
+        width: calc(388px*0.7);
+        height: calc(169px*0.7);
       }
     }
   }

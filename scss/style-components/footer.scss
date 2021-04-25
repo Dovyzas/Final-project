@@ -5,6 +5,11 @@ footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media (max-width: 503px) {
+            justify-content: center;
+          }
 
         .socials-image img {
             width: 20px;
@@ -13,6 +18,10 @@ footer {
 
             &:not(:last-child) {
                 margin-right: 108px;
+
+                @media (max-width: 850px) {
+                    margin-right: 35px;
+                  }
             }
 
             &:hover {
