@@ -1,0 +1,97 @@
+.comments {
+
+    h2 {
+        position: relative;
+        text-align: center;
+        margin: 67px 0 91px 0;
+
+        &:after {
+            content: "";
+            border-bottom: 2px solid var(--skyblue);
+            width: 64px;
+            position: absolute;
+            top: 0;
+            bottom: -31px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+    .swiper-container {
+        margin-bottom: 57px;
+        // display: flex;
+        // align-items: flex-end;
+        // justify-content: flex-end;
+
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                width: 270px;
+                // margin-right: 23px;
+
+                p {
+                     margin: 0;
+                }
+            
+                .title {
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+
+
+                    .title-text {
+                        width: 230px;
+                        background-color: var(--skyblue);
+                        padding: 20px;
+                        border-radius: 10px;
+                        color: #fff;
+                        margin-bottom: 20px;
+                    }
+
+                    .arrow {
+                        position: absolute;
+                        bottom: 155px;
+                        left: 25px;
+                        border: 10px solid rgba(255, 255, 255, 0);
+                        border-top-color: var(--skyblue);
+                    }
+            
+                    .title-icon {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    margin-bottom: 85px;
+            
+                    img {
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                        margin-right: 20px;
+                        }
+                    .icon-text {
+
+                        h4, p {
+                            margin: 0;
+                        }
+
+                        h4 {
+                            margin-bottom: 4px;
+                        }
+
+
+                        }
+                    } 
+                }
+            }
+            .swiper-pagination-bullet {
+                width: 5px;
+                height: 5px;
+                background: rgba(255, 255, 255, 0);
+                border: 2px solid var(--orange);
+                }
+            .swiper-pagination-bullet-active {
+                  background: var(--orange);
+                }
+            }  
+}

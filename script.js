@@ -28,3 +28,33 @@ for (let tab of tabNavigationBlocks) {
     document.querySelector('.tabs .tab-content[data-slide="'+index+'"]').classList.add('active');
     })
 }
+
+const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    autoHeight: true,
+
+    breakpoints: {
+        // when window width is >= 320px
+        600: {
+          slidesPerView: 2,
+        },
+        // when window width is >= 480px
+        1000: {
+          slidesPerView: 3,
+        }
+      },
+
+    // autoplay: {
+    //     delay: 5000
+    // },
+
+    // Optional parameters
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+
+  });
