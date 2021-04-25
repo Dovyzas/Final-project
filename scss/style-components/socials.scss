@@ -1,5 +1,6 @@
 .socials {
     margin: 0;
+
     .container {
         display: flex;
         flex-direction: row;
@@ -24,6 +25,7 @@
                 margin-right: 25px;
                 }
             }
+
             &:hover {
                 opacity: 1;
                 cursor: pointer;

@@ -1,6 +1,7 @@
 footer {
     margin: 0;
     background-color: var(--dark);
+
     .container {
         display: flex;
         align-items: center;
@@ -9,7 +10,7 @@ footer {
 
         @media (max-width: 503px) {
             justify-content: center;
-          }
+        }
 
         .socials-image img {
             width: 20px;
@@ -21,7 +22,7 @@ footer {
 
                 @media (max-width: 850px) {
                     margin-right: 35px;
-                  }
+                }
             }
 
             &:hover {

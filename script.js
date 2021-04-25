@@ -95,8 +95,7 @@ button.addEventListener('click', function() {
         successMsg.classList.remove("active");
     }
 });
-
-// Form validation
+ 
 
 //Contact form validation
 
