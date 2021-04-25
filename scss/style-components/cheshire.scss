@@ -5,15 +5,26 @@
       flex-direction: row;
       justify-content: space-between;
       color: #fff;
+
+      @media (max-width: 950px) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
   
       .cheshire-content {
         padding: 90px 0 90px 0;
       }
+
       p {
         width: 451px;
         line-height: 22px;
         margin-bottom: 43px;
         color: white;
+        
+        @media (max-width: 700px) {
+          width: 300px;
+        }
+
 
       }
   
@@ -22,6 +33,12 @@
         width: 317px;
         font-size: 30px;
         margin-bottom: 54px;
+
+        @media (max-width: 700px) {
+          font-size: 20px;
+          text-align: center;
+          display: flex;
+        }
 
         &:after {
             content: "";
@@ -56,6 +73,7 @@
           img {
             width: 27px;
             height: 18px;
+
           }
         } 
 
@@ -71,5 +89,10 @@
     img {
       width: 388.58px;
       height: 169.47px;
+
+      @media (max-width: 700px) {
+        width: calc(388px*0.75);
+        height: calc(169px*0.8);
+      }
     }
   }

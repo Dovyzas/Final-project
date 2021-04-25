@@ -29,6 +29,8 @@ for (let tab of tabNavigationBlocks) {
     })
 }
 
+// Reviews section
+
 const swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
     autoHeight: true,
@@ -58,3 +60,15 @@ const swiper = new Swiper('.swiper-container', {
     },
 
   });
+
+  // Mobile menu section
+  
+  document.getElementById('mobile-menu').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.getElementById('nav-bar').classList.toggle('active');
+});
+
+    document.getElementById('nav-element').addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.remove('active');
+        document.getElementById('nav-bar').classList.remove('active');
+    });

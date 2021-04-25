@@ -2,8 +2,7 @@
     .container {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
         padding-top: 98.8px;
 
         h1 {
@@ -17,7 +16,7 @@
                 content: "";
                 background: var(--orange);
                 position: absolute;
-                left: 193px;
+                left: 44%;
                 bottom: -21.2px;
                 height: 2px;
                 width: 64px;
@@ -31,9 +30,17 @@
 
         .about-section-content {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             flex-direction: row;
             margin-top: 65.2px;
+            // justify-content: center;
+            flex-wrap: wrap;
+
+            @media (max-width: 1050px) {
+                flex-wrap: wrap;
+                // align-items: center;
+                justify-content: center;
+            }
             
             .content {
                 display: flex;
@@ -43,10 +50,16 @@
                 width: 285px;
                 margin-bottom: 122px;
 
-                &:not(:last-child) {
-                    margin-right: 97px;
-                }
                 
+
+                // &:not(:last-child) {
+                //     margin-right: 97px;
+                // }
+
+                // @media (max-width: 1050px) {
+                //     margin-right: 0;
+                // }
+
                 h4 {
                     color: #333333;
                     margin: 36px 0 27px 0;
