@@ -1,6 +1,7 @@
 .hero {
     position: relative;
-    margin-top: 77px;
+    margin-top: 76px;
+    height: calc(100vh - 170px);
 
     &-image, 
     &:after {
@@ -32,6 +33,7 @@
         img {
             width: 246px;
             height: 107px;
+            margin-bottom: 22px;
         }
 
         h1{
@@ -52,7 +54,7 @@
         }
         
         p {
-            margin-top: 67px;
+            margin: 67px 0 43px 0;
             font-size: 16px;
             font-weight: bold;
             opacity: 0.8;
@@ -63,4 +65,3 @@
 
     }
 }
-

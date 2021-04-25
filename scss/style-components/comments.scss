@@ -51,7 +51,7 @@
 
                     .arrow {
                         position: absolute;
-                        bottom: 155px;
+                        bottom: 156px;
                         left: 25px;
                         border: 10px solid rgba(255, 255, 255, 0);
                         border-top-color: var(--skyblue);
@@ -94,4 +94,64 @@
                   background: var(--orange);
                 }
             }  
+}
+
+// Contact us section
+
+.contact {
+    background-color: var(--orange);
+    text-align: center;
+    
+    h1, p {
+        color: #fff;
+    }
+
+    h1 {
+        padding-top: 70px;
+        margin-bottom: 50px;
+        font-size: 36px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+
+        .form-content {
+            padding: 33px 65px;
+            margin: 0;
+            border-radius: 5px;
+            box-shadow: 0 5px 20px -10px #000;
+
+            .radio {
+                display: inline-flex;
+              }
+        }
+    }
+
+    .form-button {
+
+        p {
+            position: relative;
+            left: 51px;
+            background-color: var(--mint);
+            color: #ffffff;
+            width: 158px;
+            padding: 15px 0;
+            margin: 0;
+            font-size: 20px;
+            border-radius: 5px;
+            
+            a {
+              text-decoration: none;
+              cursor: pointer;
+              color: #fff;
+            }
+        }
+    }
 }
