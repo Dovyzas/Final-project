@@ -37,10 +37,17 @@ header {
 
     ul {
         display: flex;
+        padding: 0;
+        margin: 0;
         
         li {
             list-style: none;
             margin-left: 45px;
+
+            @media (max-width: 700px) {
+                margin-left: 0;
+            }
+
 
             a {
                 text-decoration: none;
@@ -82,11 +89,13 @@ header {
 
     ul {
         display: flex;
+
             @media (max-width: 700px) {
+                // display: flex;
             flex-direction: column;
-            justify-content: center;
+            // justify-content: center;
             align-items: center;
-            text-align: center;
+            // text-align: center;
 
                 li {
                     margin-bottom: 15px;
