@@ -62,7 +62,7 @@ const swiper = new Swiper('.swiper-container', {
   });
 
   // Mobile menu section
-  
+
   document.getElementById('mobile-menu').addEventListener('click', function() {
     this.classList.toggle('active');
     document.getElementById('nav-bar').classList.toggle('active');
@@ -72,3 +72,8 @@ const swiper = new Swiper('.swiper-container', {
         document.getElementById('mobile-menu').classList.remove('active');
         document.getElementById('nav-bar').classList.remove('active');
     });
+
+
+  // Form Validation
+
+  
