@@ -76,4 +76,46 @@ const swiper = new Swiper('.swiper-container', {
 
   // Form Validation
 
-  
+  let firstName = document.getElementById('fname');
+  let lastName = document.getElementById('lname');
+  let phoneNumber = document.getElementById('number');
+  let button = document.getElementById('submit');
+  let subMonth = document.getElementById('sub-month'); 
+  let subYear = document.getElementById('sub-year'); 
+  let errorMsg = document.getElementById('error');
+  let successMsg = document.getElementById('success');
+
+button.addEventListener('click', function() {
+    if (firstName.value && lastName.value && phoneNumber.value && (subMonth.checked || subYear.checked) ) {
+        successMsg.classList.add("active");
+        errorMsg.classList.remove("active");
+    }
+    else {
+        errorMsg.classList.add("active");
+        successMsg.classList.remove("active");
+    }
+});
+
+// Form validation
+
+//Contact form validation
+
+let firstNameC = document.getElementById('fname-2');
+let lastNameC = document.getElementById('lname-2');
+let phoneNumberC = document.getElementById('number-2');
+let buttonC = document.getElementById('submit-2');
+let subMonthC = document.getElementById('sub-month-2'); 
+let subYearC = document.getElementById('sub-year-2'); 
+let errorMsgC = document.getElementById('error-2');
+let successMsgC = document.getElementById('success-2');
+
+buttonC.addEventListener('click', function() {
+    if (firstNameC.value && lastNameC.value && phoneNumberC.value && (subMonthC.checked || subYearC.checked) ) {
+        successMsgC.classList.add("active");
+        errorMsgC.classList.remove("active");
+    }
+    else {
+        errorMsgC.classList.add("active");
+        successMsgC.classList.remove("active");
+    }
+});

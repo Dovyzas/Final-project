@@ -135,6 +135,27 @@
             .radio {
                 display: inline-flex;
               }
+
+              #error-2 {
+                color: red;
+                font-weight: bold;
+                visibility: hidden;
+          
+          
+                &.active {
+                  visibility: visible;
+                }
+              }
+          
+              #success-2 {
+                font-weight: bold;
+                color: var(--mint);
+                visibility: hidden;
+          
+                &.active {
+                  visibility: visible;
+                }
+              }
         }
     }
 
