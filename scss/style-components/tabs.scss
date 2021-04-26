@@ -1,6 +1,7 @@
 .tabs {
     position: relative;
     padding: 115px 0;
+    scroll-behavior: smooth;
 
     &-image,
     &:after {
@@ -27,6 +28,7 @@
         flex-direction: row;
         align-items: center;
         z-index: 1;
+        scroll-behavior: smooth;
 
         @media (max-width: 950px) {
         flex-direction: column;
